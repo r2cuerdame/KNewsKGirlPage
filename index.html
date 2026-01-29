@@ -3,115 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KNewsKGirl - Korean Culture News Automation</title>
+    <title>KNewsKGirl</title>
+    <meta name="description" content="KNewsKGirl - YouTube automation application for Korean culture news">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #f5f5f5;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
+            padding: 40px 20px;
+            color: #333;
         }
         .container {
-            text-align: center;
-            padding: 40px 20px;
-            max-width: 700px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        .app-name {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
         }
-        .tagline {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 30px;
-        }
-        .purpose-box {
-            background: rgba(255,255,255,0.95);
-            color: #333;
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            text-align: left;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        }
-        .purpose-box h2 {
-            color: #667eea;
-            margin-bottom: 15px;
+        h2 {
             font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
         }
-        .purpose-box p {
-            line-height: 1.7;
+        p {
+            line-height: 1.8;
             margin-bottom: 15px;
         }
-        .purpose-box ul {
-            padding-left: 20px;
-            margin-bottom: 15px;
+        ul {
+            padding-left: 25px;
+            margin-bottom: 20px;
         }
-        .purpose-box li {
-            margin: 8px 0;
-        }
-        .api-note {
-            background: #f0f4ff;
-            padding: 15px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            border-left: 4px solid #667eea;
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
         }
         .links {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
         }
         .links a {
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 24px;
-            border: 2px solid rgba(255,255,255,0.5);
-            border-radius: 25px;
-            transition: all 0.3s;
-            font-size: 0.95rem;
-        }
-        .links a:hover {
-            background: rgba(255,255,255,0.2);
-            border-color: #fff;
-        }
-        .youtube-btn {
-            background: #ff0000 !important;
-            border-color: #ff0000 !important;
-        }
-        .youtube-btn:hover {
-            background: #cc0000 !important;
+            color: #0066cc;
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="app-name">KNewsKGirl</h1>
-        <p class="tagline">Korean Culture News Automation Application</p>
+        <h1>KNewsKGirl</h1>
 
-        <div class="purpose-box">
-            <h2>Application Purpose</h2>
-            <p><strong>KNewsKGirl</strong> is a personal automation application that manages a YouTube channel dedicated to Korean culture news. The application:</p>
-            <ul>
-                <li>Automatically uploads videos to the KNewsKGirl YouTube channel</li>
-                <li>Manages video metadata including titles, descriptions, and thumbnails</li>
-                <li>Adds closed captions in 15 languages for global accessibility</li>
-                <li>Reads channel analytics to improve content quality</li>
-            </ul>
+        <h2>What is KNewsKGirl?</h2>
+        <p>KNewsKGirl is a YouTube channel automation application. This application automatically uploads Korean culture news videos to the KNewsKGirl YouTube channel.</p>
 
-            <div class="api-note">
-                <strong>YouTube API Usage:</strong> This application uses the YouTube Data API v3 solely for managing a single personal YouTube channel. It does not collect, store, or share any user data. The application is operated exclusively by the channel owner.
-            </div>
-        </div>
+        <h2>Application Purpose</h2>
+        <p>The purpose of KNewsKGirl application is to:</p>
+        <ul>
+            <li>Upload videos to YouTube automatically</li>
+            <li>Manage video titles, descriptions, and thumbnails</li>
+            <li>Add closed captions in 15 different languages</li>
+            <li>Read channel analytics to improve content</li>
+        </ul>
+
+        <h2>YouTube API Usage</h2>
+        <p>KNewsKGirl uses the YouTube Data API v3 to manage a single personal YouTube channel. This application:</p>
+        <ul>
+            <li>Does NOT collect any user data</li>
+            <li>Does NOT access other users' YouTube accounts</li>
+            <li>Is used only by the channel owner</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>YouTube Channel: <a href="https://www.youtube.com/@KNewsKGirl" target="_blank">youtube.com/@KNewsKGirl</a></p>
 
         <div class="links">
-            <a href="https://www.youtube.com/@KNewsKGirl" class="youtube-btn" target="_blank">YouTube Channel</a>
             <a href="privacy-policy.html">Privacy Policy</a>
             <a href="terms-of-service.html">Terms of Service</a>
         </div>
