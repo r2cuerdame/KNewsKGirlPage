@@ -3,23 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KNewsKGirl</title>
+    <title>KNewsKGirl - Korean Culture News by Joey</title>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 600px;
-            margin: 100px auto;
-            padding: 20px;
-            text-align: center;
-            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
         }
-        h1 { color: #1a1a1a; }
-        a { color: #0066cc; }
+        .container {
+            text-align: center;
+            padding: 40px;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        .description {
+            background: rgba(255,255,255,0.15);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        .links a:hover {
+            background: rgba(255,255,255,0.2);
+            border-color: #fff;
+        }
+        .youtube-btn {
+            background: #ff0000 !important;
+            border-color: #ff0000 !important;
+        }
+        .youtube-btn:hover {
+            background: #cc0000 !important;
+        }
     </style>
 </head>
 <body>
-    <h1>KNewsKGirl</h1>
-    <p>Korean culture news delivered by Joey</p>
-    <p><a href="privacy-policy.html">Privacy Policy</a></p>
+    <div class="container">
+        <h1>KNewsKGirl</h1>
+        <p class="tagline">Korean Culture News by Joey</p>
+
+        <div class="description">
+            <p>Hey! I'm Joey, your Korean tomboy guide to K-pop, K-drama, and everything Korean culture!
+            I deliver daily news in English with 15-language subtitles. Let's explore Korean culture together!</p>
+        </div>
+
+        <div class="links">
+            <a href="https://www.youtube.com/@KNewsKGirl" class="youtube-btn" target="_blank">YouTube Channel</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+    </div>
 </body>
 </html>
